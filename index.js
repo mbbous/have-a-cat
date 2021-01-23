@@ -17,10 +17,8 @@ catButton.addEventListener("click", evt => {
     .then(res => res.json())
     .then(cats => {
         cats.forEach(cat => {
-            catDiv.innerHTML = '<h3> Here is theis cat wishing you the best day ever🌈 </h3>
-            <img src="${cat.url}" alt="Kitty <3" />
+            catDiv.innerHTML = '<h3> Here is theis cat wishing you the best day ever🌈 </h3> <img src="${cat.url}" alt="Kitty <3" />'
             
         });
-
     })
-}
+})
